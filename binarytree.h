@@ -21,8 +21,14 @@ struct TreeNode* insertBST(struct TreeNode* root, int data);
  * Return 1 if data was present, 0 if not found. */
 int removeBST(struct TreeNode** rootRef, int data);
 
+/*Returns the in order successor of a given tree node. */
+struct TreeNode** getInOrderSuccessor(struct TreeNode **node);
+
 /* Return minimum value in non-empty binary search tree. */
 int minValueBST(struct TreeNode* root);
+
+/* Return maximum value in non-empty binary search tree. */
+int maxValueBST(struct TreeNode* root);
 
 /* Return maximum depth of tree. Empty tree has depth 0. */
 int maxDepth(struct TreeNode* root);
